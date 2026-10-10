@@ -9,7 +9,8 @@ export const authorizedImpl = (s) => s.authorized;
 export const enableTraceImpl = (s) => s.enableTrace();
 export const encryptedImpl = (s) => s.encrypted;
 export const exportKeyingMaterialImpl = (s, len, label) => s.exportKeyingMaterial(len, label);
-export const exportKeyingMaterialOptionsImpl = (s, len, label, context) => s.exportKeyingMaterial(len, label, context);
+export const exportKeyingMaterialOptionsImpl = (s, len, label, context) =>
+  s.exportKeyingMaterial(len, label, context);
 export const getCertificateImpl = (s) => s.getCertificate();
 export const getCipherImpl = (s) => s.getCipher();
 export const getEphemeralKeyInfoImpl = (s) => s.getEphemeralKeyInfo();

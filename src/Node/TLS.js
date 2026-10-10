@@ -1,6 +1,6 @@
 import tls from "node:tls";
-export { 
-  rootCertificates, 
+export {
+  rootCertificates,
   DEFAULT_ECDH_CURVE as defaultEcdhCurve,
   DEFAULT_MAX_VERSION as defaultMinVersion,
   DEFAULT_MIN_VERSION as defaultMaxVersion,
@@ -11,4 +11,3 @@ export const checkServerIdentityImpl = (hostname, cert) => tls.checkServerIdenti
 export const createSecureContext = () => tls.createSecureContext();
 export const createSecureContextOptionsImpl = (o) => tls.createSecureContext(o);
 export const getCiphers = () => tls.getCiphers();
-
